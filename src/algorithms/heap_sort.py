@@ -19,13 +19,11 @@ def heapify(list_unsorted, length, root):
     left = 2 * root + 1
     right = 2 * root + 2
 
-    # See if left child of root exists and is
-    # greater than root
+    # Left child of root exists and is greater than root
     if left < length and list_unsorted[root] < list_unsorted[left]:
         largest = left
 
-    # See if right child of root exists and is
-    # greater than root
+    # Right child of root exists and is greater than root
     if right < length and list_unsorted[largest] < list_unsorted[right]:
         largest = right
 
@@ -33,5 +31,5 @@ def heapify(list_unsorted, length, root):
     if largest != root:
         swap(list_unsorted, root, largest)
 
-        # Heapify the root.
+        # Heapify the root
         heapify(list_unsorted, length, largest)

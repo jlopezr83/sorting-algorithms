@@ -11,6 +11,13 @@ THRESHOLD_ELEMENTS_SLOW_ALGORITHMS = 10000
 
 
 def generate_list(elements, min, max):
+    """
+    Generates list with random numbers
+    :param elements: number of elements in the list
+    :param min: Min value in the list
+    :param max: Max value in the list
+    :return: List with random numbers
+    """
     return [randint(min, max) for _ in range(elements)]
 
 

@@ -28,12 +28,13 @@ def merge(list_unsorted, left, right):
 
         k += 1
 
-    # Copy remaining elements
+    # Copy remaining elements from left
     while i < len(left):
         list_unsorted[k] = left[i]
         i += 1
         k += 1
 
+    # Copy remaining elements from right
     while j < len(right):
         list_unsorted[k] = right[j]
         j += 1
